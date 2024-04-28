@@ -97,7 +97,7 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
 
 
 
-<?php
+// <?php
 // CartViewController.php
 
 class CartViewController {
@@ -290,22 +290,16 @@ REQUEST_METHOD'] === 'POST') {
     $cartController->viewCart();
     }
     
-    css
-    Copy code
+
+    // To use the `CartController`, you can include the code in a PHP file and include it in the relevant pages where the cart functionality is needed. You can also customize the HTML output of the `viewCart()` method to match your desired cart layout and styling.
     
-    In this example, the `CartController` class handles adding items to the cart, removing items from the cart, updating the cart, and viewing the cart. The methods interact with the `$_SESSION['cart']` variable, which stores the items in the cart.
+    // Remember to handle the checkout process separately, which involves collecting customer information and completing the order transaction. You can create a separate page or form to handle the checkout process and interact with the necessary database tables to store the order details.
     
-    The class takes an instance of PDO in the constructor to connect to the database if necessary.
-    
-    To use the `CartController`, you can include the code in a PHP file and include it in the relevant pages where the cart functionality is needed. You can also customize the HTML output of the `viewCart()` method to match your desired cart layout and styling.
-    
-    Remember to handle the checkout process separately, which involves collecting customer information and completing the order transaction. You can create a separate page or form to handle the checkout process and interact with the necessary database tables to store the order details.
-    
-    Feel free to customize the code according to your specific require
+    // Feel free to customize the code according to your specific require
 
 
 
-    <?php
+    // <?php
     session_start();
     
     // Check if the item ID and quantity are provided
